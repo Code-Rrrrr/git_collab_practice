@@ -1,0 +1,9 @@
+# Ignore Windows ADS files
+*.Zone.Identifier
+
+# Ignore OS junk
+.DS_Store
+Thumbs.db
+
+# Ignore node_modules if ever added later
+node_modules/
