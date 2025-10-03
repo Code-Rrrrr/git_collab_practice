@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Coffee Haven</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>Coffee Haven</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="menu.html" class="nav-link active">Menu</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="theme-toggle">
+          <i class="fas fa-moon" id="theme-icon"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="menu-hero">
+    <div class="menu-content">
+      <h1>Our Menu</h1>
+      <p>Discover your perfect brew</p>
+    </div>
+  </section>
+
+  <section class="menu-categories">
+    <div class="container">
+      <div class="category-buttons">
+        <button class="category-btn active" data-category="all">All Items</button>
+        <button class="category-btn" data-category="coffee">Coffee</button>
+        <button class="category-btn" data-category="tea">Tea</button>
+        <button class="category-btn" data-category="pastry">Pastries</button>
+      </div>
+
+      <div class="menu-items">
+        <!-- Coffee Items -->
+        <div class="menu-item" data-category="coffee">
+          <div class="item-info">
+            <h3>Espresso</h3>
+            <p>Strong and bold Italian classic</p>
+            <span class="price">$3.50</span>
+          </div>
+          <button class="add-to-cart" onclick="addToCart('Espresso', 3.50)">
+            <i class="fas fa-plus"></i>
+          </button>
+        </div>
+
+        <div class="menu-item" data-category="coffee">
+          <div class="item-info">
+            <h3>Latte</h3>
+            <p>Espresso with steamed milk</p>
+            <span class="price">$4.50</span>
+          </div>
+          <button class="add-to-cart" onclick="addToCart('Latte', 4.50)">
+            <i class="fas fa-plus"></i>
+          </button>
+        </div>
+
+        <div class="menu-item" data-category="coffee">
+          <div class="item-info">
+            <h3>Cappuccino</h3>
+            <p>Perfect foam-to-milk ratio</p>
+            <span class="price">$4.00</span>
+          </div>
+          <button class="add-to-cart" onclick="addToCart('Cappuccino', 4.00)">
+            <i class="fas fa-plus"></i>
+          </button>
+        </div>
+
+        <!-- Tea Items -->
+        <div class="menu-item" data-category="tea">
+          <div class="item-info">
+            <h3>Green Tea</h3>
+            <p>Fresh and antioxidant-rich</p>
+            <span class="price">$2.50</span>
+          </div>
+          <button class="add-to-cart" onclick="addToCart('Green Tea', 2.50)">
+            <i class="fas fa-plus"></i>
+          </button>
+        </div>
+
+        <div class="menu-item" data-category="tea">
+          <div class="item-info">
+            <h3>Chai Latte</h3>
+            <p>Spiced tea with steamed milk</p>
+            <span class="price">$3.50</span>
+          </div>
+          <button class="add-to-cart" onclick="addToCart('Chai Latte', 3.50)">
+            <i class="fas fa-plus"></i>
+          </button>
+        </div>
+
+        <!-- Pastry Items -->
+        <div class="menu-item" data-category="pastry">
+          <div class="item-info">
+            <h3>Croissant</h3>
+            <p>Buttery and flaky</p>
+            <span class="price">$2.80</span>
+          </div>
+          <button class="add-to-cart" onclick="addToCart('Croissant', 2.80)">
+            <i class="fas fa-plus"></i>
+          </button>
+        </div>
+
+        <div class="menu-item" data-category="pastry">
+          <div class="item-info">
+            <h3>Blueberry Muffin</h3>
+            <p>Fresh baked daily</p>
+            <span class="price">$3.00</span>
+          </div>
+          <button class="add-to-cart" onclick="addToCart('Blueberry Muffin', 3.00)">
+            <i class="fas fa-plus"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shopping Cart -->
+  <div class="cart-icon" onclick="toggleCart()">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count">0</span>
+  </div>
+
+  <div class="cart-sidebar">
+    <div class="cart-header">
+      <h3>Your Order</h3>
+      <button class="close-cart" onclick="toggleCart()">&times;</button>
+    </div>
+    <div class="cart-items">
+      <!-- Cart items will be added here dynamically -->
+    </div>
+    <div class="cart-total">
+      Total: $<span id="total-amount">0.00</span>
+    </div>
+    <button class="checkout-btn" onclick="checkout()">Checkout</button>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Coffee Haven. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
