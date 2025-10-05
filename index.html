@@ -28,8 +28,9 @@
   <section class="hero">
     <div class="hero-content">
       <h2 id="greeting">Your Daily Dose of Coffee</h2>
-      <p>Freshly brewed, just for you ☕✨</p>
+      <p class="herosub">Freshly brewed, just for you ☕✨</p>
       <button class="cta-button" onclick="showOrderModal()">Order Now</button>
+       <button class="cta-button secondary">Learn More</button>
     </div>
     <div class="floating-elements">
       <div class="floating-item">☕</div>
@@ -38,7 +39,8 @@
     </div>
   </section>
 
-  <section class="features">
+<section class="features">
+  <div class="container features-grid">
     <div class="feature-card">
       <i class="fas fa-clock"></i>
       <h3>Fast Service</h3>
@@ -54,7 +56,9 @@
       <h3>Free Delivery</h3>
       <p>On orders over $15</p>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Order Modal -->
   <div id="orderModal" class="modal">
