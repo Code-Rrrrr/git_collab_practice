@@ -70,7 +70,26 @@ header {
   align-items: center;
 }
 
-header h1 {
+/* NEW: Logo Styles */
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.logo-icon {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  transition: var(--transition);
+}
+
+.logo-link:hover .logo-icon {
+  transform: rotate(-15deg);
+}
+
+/* UPDATED: h1 is now inside the logo link */
+.logo-link h1 {
   margin-bottom: 0;
   font-size: 1.8rem;
   font-weight: 700;
@@ -79,8 +98,8 @@ header h1 {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   font-family: 'Playfair Display', serif;
-    color: var(--text-light);
 }
+
 
 nav {
   display: flex;
@@ -1324,4 +1343,3 @@ section {
   line-height: 1.4;
   text-align: center;
 }
-
