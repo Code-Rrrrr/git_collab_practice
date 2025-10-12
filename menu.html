@@ -10,7 +10,10 @@
 <body>
   <header>
     <div class="header-container">
-      <h1>Coffee Haven</h1>
+      <a href="index.html" class="logo-link">
+        <i class="fas fa-mug-hot logo-icon"></i>
+        <h1>Coffee Haven</h1>
+      </a>
       <nav>
         <ul>
           <li><a href="index.html" class="nav-link">Home</a></li>
@@ -42,7 +45,6 @@
       </div>
 
       <div class="menu-items">
-        <!-- Coffee Items -->
         <div class="menu-item" data-category="coffee">
           <div class="item-info">
             <h3>Espresso</h3>
@@ -76,7 +78,6 @@
           </button>
         </div>
 
-        <!-- Tea Items -->
         <div class="menu-item" data-category="tea">
           <div class="item-info">
             <h3>Green Tea</h3>
@@ -99,7 +100,6 @@
           </button>
         </div>
 
-        <!-- Pastry Items -->
         <div class="menu-item" data-category="pastry">
           <div class="item-info">
             <h3>Croissant</h3>
@@ -125,7 +125,6 @@
     </div>
   </section>
 
-  <!-- Shopping Cart -->
   <div class="cart-icon" onclick="toggleCart()">
     <i class="fas fa-shopping-cart"></i>
     <span class="cart-count">0</span>
@@ -137,8 +136,7 @@
       <button class="close-cart" onclick="toggleCart()">&times;</button>
     </div>
     <div class="cart-items">
-      <!-- Cart items will be added here dynamically -->
-    </div>
+      </div>
     <div class="cart-total">
       Total: $<span id="total-amount">0.00</span>
     </div>
